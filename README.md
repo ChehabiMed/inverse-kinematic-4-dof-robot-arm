@@ -4,6 +4,8 @@ This repository contains MATLAB scripts for solving the forward and inverse kine
 
 ![Robotic Arm](matlab_image.png)
 
+The image represent four links starting with the base link in Red to the end effector in Cyan, and also a projection point on the 2D plane.
+
 ## Files
 
 - `MGD_MGI.m`: Main script to calculate the forward and inverse kinematics.
