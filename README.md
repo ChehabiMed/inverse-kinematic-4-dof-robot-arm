@@ -1,2 +1,60 @@
-# inverse-kinematic-4-dof-robot-arm
-This is a code on matlab inverse kinematic of robot arm with 4dof
+# inverse and direct kinematic of a 4-dof robot arm
+
+This repository contains MATLAB scripts for solving the forward and inverse kinematics of a robotic arm using Denavit-Hartenberg (DH) parameters.
+
+![Robotic Arm](matlab_image.png)
+
+## Files
+
+- `MGD_MGI.m`: Main script to calculate the forward and inverse kinematics.
+- `DHmethod.m`: Function to create the DH transformation matrix for each joint.
+
+## Usage
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/robotic-arm-kinematics.git
+    cd robotic-arm-kinematics
+    ```
+
+2. Open MATLAB and navigate to the repository directory.
+
+3. Ensure both `MGD_MGI.m` and `DHmethod.m` are in the same directory.
+
+4. Run the `MGD_MGI.m` script to calculate the forward and inverse kinematics.
+
+## MGD_MGI.m
+
+This script performs the following tasks:
+
+1. **Initialization**:
+    - Defines the lengths of the arm segments and the target end-effector position.
+    - Clears previous variables while retaining the defined inputs.
+
+2. **Symbolic Variables**:
+    - Defines the symbolic variables for the DH parameters.
+
+3. **Forward Kinematics**:
+    - Computes the DH transformation matrices for each joint.
+    - Multiplies the matrices to get the overall transformation matrix from the base to the end-effector.
+
+4. **Inverse Kinematics**:
+    - Computes the joint angles required to reach the target end-effector position using inverse kinematics.
+
+5. **Visualization**:
+    - Plots the robotic arm in 3D space.
+
+## DHmethod.m
+
+This function creates the DH transformation matrix for a given joint. It takes the following parameters:
+
+- `a`: Link length.
+- `alpha`: Link twist.
+- `d`: Link offset.
+- `theta`: Joint angle.
+
+The function returns the 4x4 DH transformation matrix.
+
+
+To see the robotic arm in action, run the `MGD_MGI.m` script. The script will output the transformation matrix and plot the arm in 3D space.
+
