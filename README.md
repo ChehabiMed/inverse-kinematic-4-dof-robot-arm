@@ -28,20 +28,20 @@ This repository contains MATLAB scripts for solving the forward and inverse kine
 This script performs the following tasks:
 
 1. **Initialization**:
-    - Defines the lengths of the arm segments and the target end-effector position.
     - Clears previous variables while retaining the defined inputs.
+    - Defines the lengths of the arm segments and the target end-effector position.
 
-2. **Symbolic Variables**:
+3. **Symbolic Variables**:
     - Defines the symbolic variables for the DH parameters.
 
-3. **Forward Kinematics**:
+4. **Forward Kinematics**:
     - Computes the DH transformation matrices for each joint.
     - Multiplies the matrices to get the overall transformation matrix from the base to the end-effector.
 
-4. **Inverse Kinematics**:
+5. **Inverse Kinematics**:
     - Computes the joint angles required to reach the target end-effector position using inverse kinematics.
 
-5. **Visualization**:
+6. **Visualization**:
     - Plots the robotic arm in 3D space.
 
 ## DHmethod.m
