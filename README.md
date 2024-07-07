@@ -28,7 +28,7 @@ This repository contains MATLAB scripts for solving the forward and inverse kine
 This script performs the following tasks:
 
 1. **Initialization**:
-    - Clears previous variables while retaining the defined inputs.
+    - Clears previous variables.
     - Defines the lengths of the arm segments and the target end-effector position.
 
 3. **Symbolic Variables**:
