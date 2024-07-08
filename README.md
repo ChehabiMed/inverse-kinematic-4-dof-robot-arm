@@ -15,8 +15,8 @@ The image represent four links starting with the base link in Red to the end eff
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/robotic-arm-kinematics.git
-    cd robotic-arm-kinematics
+    git clone https://github.com/ChehabiMed/inverse-kinematic-4-dof-robot-arm.git
+    cd inverse-kinematic-4-dof-robot-arm
     ```
 
 2. Open MATLAB and navigate to the repository directory.
